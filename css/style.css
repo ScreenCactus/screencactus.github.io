@@ -19,18 +19,23 @@ h1, p {
     height: auto;
     margin: 20px auto 20px auto;
 }
-@keyframes spinKeyframe {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
+footer p {
+    font-size: 0.75em;
+    margin-top: 20px;
+}
+@keyframes bounceFrames {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-50px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    60%  { transform: scale(1,1)      translateY(-7px); }
+    65%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
 }
 
-.spin {
-	animation-name: spinKeyframe;
-    animation-duration: 1000ms;
+.bounce {
+	animation-name: bounceFrames;
+    animation-duration: 1500ms;
     animation-iteration-count: infinite;
 	animation-timing-function: linear;
 	display: inline-block;
