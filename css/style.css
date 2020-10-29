@@ -1,0 +1,39 @@
+body {
+    font-family: 'Luckiest Guy', cursive;
+    background-color: rgb(58, 58, 58)
+}
+p {
+    font-family: 'Roboto', sans-serif;
+}
+h1, p {
+    color: white;
+    margin: 0;
+}
+.container, p {
+    text-align: center;
+}
+.screen-cactus {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto 20px auto;
+}
+@keyframes spinKeyframe {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.spin {
+	animation-name: spinKeyframe;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	display: inline-block;
+    font-size: 5em;
+    margin-top: 0.4em;
+}
