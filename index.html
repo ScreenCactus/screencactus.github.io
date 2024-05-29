@@ -1,31 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#4bb24b">
-    <link rel="shortcut icon" href="/images/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#4bb24b">
-    <meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
-    <title>ScreenCactus - Coming Soon</title>
-</head>
-<body>
-    <div class="container">
-        <img class="screen-cactus" src="/images/screencactus.png">
-        <h1>Screen Cactus</h1>
-        <p>Something prickly coming soon</p>
-        <p class="bounce">🦔</p>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/favicon/safari-pinned-tab.svg"
+      color="#4bb24b"
+    />
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#4bb24b" />
+    <meta
+      name="msapplication-config"
+      content="/images/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/style.css" rel="stylesheet" />
+    <title>ScreenCactus</title>
+  </head>
+  <body>
+    <header class="container">
+      <img
+        class="screen-cactus bounce"
+        src="/images/screencactus.png"
+        alt="ScreenCactus logo"
+      />
+      <h1>Creating fun things for the web!</h1>
+    </header>
+
+    <main>
+      <div class="games">
+        <a href="/" class="game" target="_blank"
+          ><img
+            alt="Hedgehogs Can Fly"
+            src="images/games/hedgehogs-can-fly.png"
+            loading="lazy"
+        /></a>
+        <a href="https://hedgehogcreek.com" class="game" target="_blank"
+          ><img
+            alt="Hedgehogs Can Fly"
+            src="images/games/coffee-collection.png"
+            loading="lazy"
+        /></a>
+        <a href="https://hedgehogcreek.com" class="game" target="_blank"
+          ><img
+            alt="Hedgehogs Creek"
+            src="images/games/hedgehog-creek.png"
+            loading="lazy"
+        /></a>
+      </div>
+    </main>
+
     <footer>
-        <p>© Copyright 2020 ScreenCactus. All Rights Reserved.</p>
+      <p>Hi, I'm ScreenCactus, an indie developer from the UK. 🌵</p>
+      <div class="links">
+        <a href="https://www.patreon.com/hedgehogcreek" target="_blank"
+          >Patreon</a
+        >
+        <a href="https://x.com/ScreenCactus" target="_blank">X</a>
+        <a href="mailto:screencactus@gmail.com" target="_blank">Contact</a>
+      </div>
+      <p id="copyright"></p>
     </footer>
-</body>
+  </body>
 </html>
+<script>
+  const currentYear = new Date().getFullYear();
+  document.getElementById(
+    "copyright"
+  ).innerHTML = `© Copyright 2020-${currentYear} ScreenCactus. All Rights Reserved.`;
+</script>
